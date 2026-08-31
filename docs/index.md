@@ -1,6 +1,6 @@
-# RM Embedded Tutorial
+# 欢迎来到 RM Embedded Tutorial
 
-RM Embedded Tutorial 文档入口。
+这里是 RM Embedded Tutorial 文档入口。
 
 ## 文档入口
 

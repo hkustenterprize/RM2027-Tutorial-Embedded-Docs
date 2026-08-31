@@ -4,6 +4,6 @@
 
 ## 在线文档
 
-[访问 RM Embedded Tutorial 文档站](https://robomaster.hk/RM2027-Tutorial-Embedded-Docs/)
+[访问 RM Embedded Tutorial 文档站](https://tutorial.robomaster.hk/)
 
 如在环境配置过程中遇到问题，请通过仓库 [Issues](https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Docs/issues) 反馈。

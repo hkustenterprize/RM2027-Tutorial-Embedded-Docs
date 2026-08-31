@@ -1,6 +1,6 @@
-site_name: RM Embedded Tutorial
-site_description: RM Embedded Tutorial environment setup and verification guides
-site_url: https://hkustenterprize.github.io/RM2027-Tutorial-Embedded-Docs/
+site_name: HKUST ENTERPRIZE Embedded Tutorial Site
+site_description: RM Embedded Tutorial docs
+site_url: https://tutorial.robomaster.hk/
 repo_name: hkustenterprize/RM2027-Tutorial-Embedded-Docs
 repo_url: https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Docs
 edit_uri: edit/main/docs/
@@ -8,7 +8,22 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: zh
+  logo: assets/enterprize-logo.png
+  favicon: assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
   features:
+    - content.action.edit
+    - content.code.copy
     - navigation.indexes
     - navigation.sections
     - navigation.top
@@ -22,7 +37,7 @@ plugins:
         - en
 
 nav:
-  - RM Embedded Tutorial:
+  - 首页:
       - index.md
       - 环境配置:
           - Environment/index.md
