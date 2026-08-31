@@ -1,17 +1,9 @@
-# RM Embedded Tutorial：环境配置指引
+# RM2027-Tutorial-Embedded-Docs
 
-请先根据所使用的操作系统完成环境配置，再进入统一的环境验证流程。
+本仓库用于维护 RM2027 Embedded Tutorial 的嵌入式开发环境文档。
 
-## 1. 选择操作系统
+## 在线文档
 
-| 操作系统 | 配置入口 |
-| --- | --- |
-| Windows | [Windows 环境配置](<docs/Windows/RM Embedded Tutorial 环境配置 Windows.md>) |
-| macOS | [macOS 环境配置](<docs/macOS/RM Embedded Tutorial 环境配置 macOS.md>) |
-| Linux | [Linux 环境配置](<docs/Linux/RM Embedded Tutorial 环境配置 Linux.md>) |
+[访问 RM Embedded Tutorial 文档站](https://robomaster.hk/RM2027-Tutorial-Embedded-Docs/)
 
-## 2. 验证环境
-
-完成对应系统的环境配置后，继续阅读：
-
-[RM Embedded Tutorial：环境验证](<docs/Verify/RM Embedded Tutorial 环境验证.md>)
+如在环境配置过程中遇到问题，请通过仓库 [Issues](https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Docs/issues) 反馈。
