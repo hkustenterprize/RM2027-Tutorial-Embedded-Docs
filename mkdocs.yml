@@ -1,8 +1,8 @@
 site_name: RM Embedded Tutorial
 site_description: RM Embedded Tutorial environment setup and verification guides
-site_url: https://hkustenterprize.github.io/RM2027-Tutorial-Embedded-Environment-Setup/
-repo_name: hkustenterprize/RM2027-Tutorial-Embedded-Environment-Setup
-repo_url: https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Environment-Setup
+site_url: https://hkustenterprize.github.io/RM2027-Tutorial-Embedded-Docs/
+repo_name: hkustenterprize/RM2027-Tutorial-Embedded-Docs
+repo_url: https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Docs
 edit_uri: edit/main/docs/
 
 theme:
