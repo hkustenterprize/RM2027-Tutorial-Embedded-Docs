@@ -1,4 +1,4 @@
-# RM Embedded Tutorial：Linux 环境配置 - Linux
+# Embedded 环境配置 - Linux
 
 请根据所使用的 Linux 发行版，自行搜索并安装以下组件：
 

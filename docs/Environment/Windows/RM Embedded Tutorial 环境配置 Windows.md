@@ -1,4 +1,4 @@
-# RM Embedded Tutorial：环境配置 - Windows
+# Embedded 环境配置 - Windows
 
 > **适用系统：** Windows 11 x64
 

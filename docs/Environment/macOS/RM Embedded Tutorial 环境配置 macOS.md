@@ -1,4 +1,4 @@
-# RM Embedded Tutorial：环境配置 - macOS
+# Embedded 环境配置 - macOS
 
 > **适用系统：** macOS（Intel 或 Apple Silicon）
 

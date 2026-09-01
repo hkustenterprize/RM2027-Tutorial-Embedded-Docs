@@ -39,7 +39,7 @@ plugins:
 nav:
   - 首页:
       - index.md
-      - 环境配置:
+      - 开发环境配置:
           - Environment/index.md
           - Windows: "Environment/Windows/RM Embedded Tutorial 环境配置 Windows.md"
           - macOS: "Environment/macOS/RM Embedded Tutorial 环境配置 macOS.md"

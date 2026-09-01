@@ -4,4 +4,4 @@
 
 ## 文档入口
 
-- [环境配置](<Environment/index.md>)
+- [开发环境配置](<Environment/index.md>)
