@@ -12,4 +12,4 @@
 
 完成对应系统的环境配置后，继续阅读：
 
-[RM Embedded Tutorial：环境验证](<Verify/RM Embedded Tutorial 环境验证.md>)
+[Embedded 环境验证](<Verify/RM Embedded Tutorial 环境验证.md>)

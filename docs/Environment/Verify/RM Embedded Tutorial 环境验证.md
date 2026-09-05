@@ -104,19 +104,7 @@ RM2027-Tutorial-Embedded-Env-Verify.hex
 
 ## 5. 连接调试器和目标板
 
-> **照片待补：调试器与目标板连接**
->1
->
->1
->
->1
->
->1
->
->1
->
->1
->nooo
+![连接调试器和目标板](RM%20Embedded%20Tutorial%20环境验证.assets/IMG_20260905_215152.jpg)
 
 ## 6. 创建 Ozone 工程
 

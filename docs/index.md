@@ -1,6 +1,6 @@
-# 欢迎来到 RM Embedded Tutorial
+# 欢迎来到 港科大RM ENTERPRIZE 战队 Embedded Tutorial
 
-这里是 RM Embedded Tutorial 文档入口。
+这里是 Embedded Tutorial 文档入口。
 
 ## 文档入口
 
