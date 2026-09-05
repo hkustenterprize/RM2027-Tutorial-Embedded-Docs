@@ -11,15 +11,17 @@
 - Ozone
 
 验证工程地址：
-
-[RM2027-Tutorial-Embedded-Env-Verify](https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Env-Verify)
+https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Env-Verify
 
 ## 1. 克隆验证工程
 
 打开终端，执行：
 
-```text
+```sh
 git clone https://github.com/hkustenterprize/RM2027-Tutorial-Embedded-Env-Verify.git
+```
+
+```sh
 cd RM2027-Tutorial-Embedded-Env-Verify
 ```
 
@@ -29,9 +31,8 @@ cd RM2027-Tutorial-Embedded-Env-Verify
 - `Core/Src/main.c`
 - `RM2027-Tutorial-Embedded-Env-Verify.ioc`
 
-> **截图待补：克隆成功**
->
-> 截取终端中的 `git clone` 命令和成功输出，并显示已经进入 `RM2027-Tutorial-Embedded-Env-Verify` 目录。不要截入访问令牌或其他认证信息。
+![终端中的命令和成功输出](RM%20Embedded%20Tutorial%20环境验证.assets/image.png)
+![文件夹内容](RM%20Embedded%20Tutorial%20环境验证.assets/image-1.png)
 
 ## 2. 使用 STM32CubeMX 生成代码
 
@@ -52,34 +53,42 @@ RM2027-Tutorial-Embedded-Env-Verify.ioc
 点击右上角的 `GENERATE CODE`。
 
 如果 STM32CubeMX 提示是否打开工程目录或生成报告，可以直接关闭提示并返回工程目录。
+![STM32CubeMX 弹窗提示](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20185613.png)
 
-生成完成后，工程根目录中应出现 `Drivers/`、`Makefile`、`startup_stm32f103xb.s` 和 `STM32F103xx_FLASH.ld`。下图拍摄于后续编译完成后，因此还包含 `build/` 目录。
+生成完成后，工程根目录中应出现 `Drivers/`、`Makefile`、`startup_stm32f103xb.s` 和 `STM32F103xx_FLASH.ld`。
 
-![生成后的工程目录](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20191111.png)
+![生成后的工程目录](RM%20Embedded%20Tutorial%20环境验证.assets/image-2.png)
 
 ## 3. 使用 Visual Studio Code 打开工程
 
 打开 Visual Studio Code，点击左上角菜单栏 `File` → `Open Folder`。
 
-![在 Visual Studio Code 中选择 Open Folder](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20152840.png)
+![在vscode中选择 Open Folder](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20152840.png)
 
 在弹出的对话框中选中克隆得到的 `RM2027-Tutorial-Embedded-Env-Verify` 文件夹，然后打开。
 
-工程打开后，点击 `Terminal` → `New Terminal`。新终端的当前目录应为工程根目录。
-
 Visual Studio Code 的 Explorer 中应能看到 `Core/`、`Drivers/`、`Makefile` 和 `.ioc` 文件。
 
-![在 Visual Studio Code 中打开验证工程](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20192749.png)
+![在vscode中打开验证工程](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20192749.png)
+
+工程打开后，点击 `Terminal` → `New Terminal`。
+![在菜单栏打开终端](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20193251.png)
+
+窗口下方将出现 Terminal 窗格。
+![vscode终端已打开](RM%20Embedded%20Tutorial%20环境验证.assets/image-3.png)
+
 
 ## 4. 编译验证固件
 
 在 Visual Studio Code 终端中执行：
 
-```text
+```sh
 make -j
 ```
 
 该命令使用 Arm GNU Toolchain 编译 STM32CubeMX 生成的 Makefile 工程。
+
+![make结果](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20193341.png)
 
 编译成功后，终端中不应出现 error，并会在 `build/` 中生成：
 
@@ -89,19 +98,33 @@ RM2027-Tutorial-Embedded-Env-Verify.bin
 RM2027-Tutorial-Embedded-Env-Verify.hex
 ```
 
-下图中，终端已经完成链接，并继续生成 `.hex` 和 `.bin` 文件；Explorer 中的 `build/` 目录也已出现。
+下图中，终端已经完成编译；Explorer 中的 `build/` 目录也已出现。
 
 ![make 编译成功并生成 ELF 固件](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20193445.png)
 
 ## 5. 连接调试器和目标板
 
 > **照片待补：调试器与目标板连接**
+>1
+>
+>1
+>
+>1
+>
+>1
+>
+>1
+>
+>1
+>nooo
 
 ## 6. 创建 Ozone 工程
 
 ### 6.1 选择目标芯片
 
 打开 Ozone，选择 `File` → `New` → `New Project Wizard`。
+
+![确认 Ozone 目标设备](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20160349.png)
 
 在 `Device` 右侧点击 `...`，搜索并选择 `STM32F103C8`。
 
@@ -113,13 +136,11 @@ RM2027-Tutorial-Embedded-Env-Verify.hex
 - `Register Set` 为 `Cortex-M3`
 - Flash 起始地址为 `0x08000000`
 
-![确认 Ozone 目标设备](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20160349.png)
-
 点击 `Next`。
 
 ### 6.2 设置调试连接
 
-完成以下设置：
+确认以下设置：
 
 - `Target Interface`：`SWD`
 - `Target Interface Speed`：`4 MHz`
@@ -127,7 +148,7 @@ RM2027-Tutorial-Embedded-Env-Verify.hex
 
 已连接的调试器应出现在下方列表中。
 
-![设置 Ozone 调试连接](RM%20Embedded%20Tutorial%20环境验证.assets/Screenshot%202026-09-01%20160404.png)
+![设置 Ozone 调试连接](RM%20Embedded%20Tutorial%20环境验证.assets/image-4.png)
 
 如果列表为空，请检查目标板供电、USB 连接和驱动，然后重新打开此页面。
 
@@ -195,8 +216,6 @@ Ozone 打开工程后，会显示源代码。
 ## 8. 检查运行结果
 
 程序运行后，与 PB12 和 PC14 对应的两个指示灯应每 0.5s 翻转一次，并始终保持相反状态。观察，确认两个指示灯持续、交替且稳定地闪烁。
-
-> **素材待补：两个指示灯交替闪烁**
 
 ## 9. 完成检查
 
